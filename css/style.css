@@ -1,0 +1,202 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v13-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v13-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --body-bg: #f1f4ff;
+  --green: #4dc490;
+  --purple: #655af2;
+  --red: #f03535;
+  --text-color: #000;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Inter", "Arial", sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*:focus {
+  outline: 2px dotted purple;
+  outline-offset: 3px;
+}
+
+.container {
+  max-width: 1192px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.intro-page {
+  display: flex;
+}
+.hero {
+  --text-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--text-color);
+}
+.hero-main {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
+  padding: 55px 60px;
+  background-color: #555;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero-badge {
+  padding: 5px 15px;
+  border-radius: 41px;
+  line-height: normal;
+  margin-bottom: 60px;
+  border: 1px solid var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 46px;
+}
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+.hero-bottom {
+  background-color: var(--green);
+  padding: 28px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 570px;
+  margin-left: 12px;
+  padding: 55px 60px 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.signup-form-heading {
+  margin-top: 0;
+  margin-bottom: 65px;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 600;
+}
+.signup-form-fields {
+  display: flex;
+  flex-direction: column;
+}
+.signup-form-field {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  color: #555;
+}
+
+.signup-form-field:focus {
+  border-color: #000;
+  color: #000;
+  font-weight: 600;
+}
+.signup-form-field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.signup-form-submit {
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 8px;
+  display: block;
+  border: 0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--purple);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  cursor: pointer;
+}
+.signup-form-notice {
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+.singup-form-notice-link {
+  color: var(--red);
+  font-weight: 500;
+}
